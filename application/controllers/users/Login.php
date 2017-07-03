@@ -24,14 +24,20 @@ class Login extends CI_Controller {
 		$this->load->view('base/footer');
 	}
 
-    public function check(){
+    public function login_check(){
         $this->load->model('Users');
+        if($this->Users->_check_cretendials()){
+            return TRUE;
+        }
+        $this->form_validation->set_message('login_check', 'Wrong Credentials');
+        return FALSE;
+    }
+
+    public function check(){
         $this->form_validation->set_rules('login', 'Login', 'trim|required');
-        $this->form_validation->set_rules('password', 'Password', 'trim|required');
+        $this->form_validation->set_rules('password', 'Password', 'trim|required|callback_login_check');
         if ($this->form_validation->run()){
-            if($this->Users->_check_cretendials()){
-                redirect('users/account', 'refresh');
-            }
+            redirect('users/account', 'refresh');
         }
         $this->index();
     }

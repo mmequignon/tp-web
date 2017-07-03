@@ -1,4 +1,6 @@
-<?php echo validation_errors(); ?>
+<div class="alert alert-danger" <?php echo (validation_errors()) ? "" : 'style="display:none"'; ?>>
+    <strong>Error !</strong><?php echo validation_errors(); ?>
+</div>
 
 <form action="<?php echo site_url('admin/product/update/save'); ?>" method="POST">
     <input name="id" type="hidden" value="<?php echo $id; ?>">

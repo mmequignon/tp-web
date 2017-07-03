@@ -61,7 +61,7 @@ class Update extends CI_Controller {
             return FALSE;
         }
         return TRUE;
-    }<F4>
+    }
 
     public function save_password(){
         $this->form_validation->set_rules('current_password', 'Current password', 'trim|required|callback_password_check');
