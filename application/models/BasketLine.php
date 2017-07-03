@@ -1,6 +1,15 @@
 <?php
 
 class BasketLine extends CI_Model{
+    public function get_basket_lines_by_basket_id($basket_id){
+        $this->db->select('bl.*, p.name');
+        $this->db->from('basket_line bl');
+        $this->db->join('product p', 'p.id = bl.product_id');
+        $this->db->where('bl.basket_id', $basket_id);
+        $this->db->where('bl.active', 1);
+        $query = $this->db->get();
+        return $query->result();
+    }
 
     public function _insert($product_id, $basket_id, $product_qty){
         $this->load->model('Product');
