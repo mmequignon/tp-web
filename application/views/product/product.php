@@ -1,3 +1,5 @@
+<?php echo validation_errors(); ?>
+
 <a href="<?php echo site_url('product/liste'); ?>">Back to products</a>
 <br/>
 <div class="row">
@@ -5,7 +7,7 @@
         <img src="<?php echo base_url() ?>assets/pics/<?php echo $product->pic; ?>" class="img-responsive"></img>
     </div>
     <div class="col-sm-4">
-        <form action="<?php echo site_url('basketline/create'); ?>" method="POST">
+        <form action="<?php echo site_url('product/item/addtobasket'); ?>" method="POST">
             <h3>Price : <?php echo $product->price; ?> €</h3>
             <input name="product_id" type="hidden" value="<?php echo $product->id; ?>">
             <input name="basket_id" type="hidden" value="<?php echo $basket_id; ?>">

@@ -97,6 +97,12 @@ class BasketLine extends CI_Model{
             return $basket_line->id;
         }
     }
+
+    public function get_basket_line_by_id($basket_line_id){
+        $this->db->where('id', $basket_line_id);
+        $query = $this->db->get('basket_line');
+        return $query->row();
+    }
 }
 
 ?>
