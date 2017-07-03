@@ -4,6 +4,7 @@ class ProductCategory extends CI_Model{
 
     public function get_all(){
         $this->db->where('active', 1);
+        $this->db->where('id !=', 3);
         $query = $this->db->get('product_category');
         return $query->result();
     }
