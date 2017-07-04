@@ -32,6 +32,9 @@
                     <li class="<?php echo ($page == 'account')? "active" : ""; ?>" <?php echo ($logged == FALSE) ? 'style="display:none;"' : ''; ?>>
                         <a href="<?php echo site_url('users/account') ?>">Account</a>
                     </li>
+                    <li class="<?php echo ($page == 'invoice')? "active" : ""; ?>" <?php echo ($logged == FALSE) ? 'style="display:none;"' : ''; ?>>
+                        <a href="<?php echo site_url('invoice/liste') ?>">Invoices</a>
+                    </li>
                     <li class="<?php echo ($page == 'login')? "active" : ""; ?>" <?php echo ($logged == TRUE) ? 'style="display:none;"' : ''; ?> >
                         <a href="<?php echo site_url('users/login') ?>">Login</a>
                     </li>
