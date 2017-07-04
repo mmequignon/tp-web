@@ -1,4 +1,3 @@
-<?php echo validation_errors(); ?>
 
 <a href="<?php echo site_url('product/liste'); ?>">Back to products</a>
 <br/>
@@ -34,6 +33,9 @@
                 </select>
             </div>
             <?php endif; ?>
+            <div class="alert alert-warning row" <?php echo (validation_errors()) ? "" : 'style="display:none"'; ?>>
+                <strong>Notice !</strong><?php echo validation_errors(); ?>
+            </div>
             <div class="form-group row">
                 <button type="submit" class="btn btn-warning" <?php echo ($logged == FALSE) ? 'style="display:none;"' : ''; ?>>Add to cart</button>
             </div>
