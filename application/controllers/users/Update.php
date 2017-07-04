@@ -19,7 +19,7 @@ class Update extends CI_Controller {
          * et l'utilisateur courant n'est pas le même, 404.
          */
         $user_id = $this->input->post('id');
-        if((! $admin) || (! $user_id == $current_user_id)){
+        if(! (($admin) || ($user_id == $current_user_id))){
             show_404();
         }
         $user = $this->Users->get_user_by_id($user_id);
