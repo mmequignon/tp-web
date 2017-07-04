@@ -52,6 +52,8 @@
             <input name="admin" id="checkboxAdmin" class="form-check-input" type="checkbox" value="1">
     </div>
     <div class="form-group row">
-        <button type="submit" class="btn btn-warning">Create</button>
+        <div class="col-sm-12">
+            <button type="submit" class="btn btn-warning">Create</button>
+        </div>
     </div>
 </form>

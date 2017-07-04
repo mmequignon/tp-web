@@ -42,6 +42,8 @@
         </div>
     </div>
     <div class="form-group row">
-        <button type="submit" class="btn btn-warning">Checkout</button>
+        <div class="col-sm-12">
+            <button type="submit" class="btn btn-warning">Checkout</button>
+        </div>
     </div>
 </form>

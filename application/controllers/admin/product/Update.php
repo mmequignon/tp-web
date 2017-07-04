@@ -33,6 +33,8 @@ class Update extends Admin {
             'price' => $product->price,
             'stock' => $product->stock,
             'categ_id' => $product->product_category_id,
+            'description' => $product->description,
+            'detail' => $product->detail,
             'product_categories' => $product_categories,
             "logged" => $logged,
             "admin" => $admin

@@ -43,7 +43,9 @@
         </div>
     </div>
     <div class="form-group row">
-        <button type="submit" class="btn btn-warning">Update</button>
+        <div class="col-sm-12">
+            <button type="submit" class="btn btn-warning">Update</button>
+        </div>
     </div>
 </form>
 <form action="<?php echo site_url('users/update/save_password'); ?>" method="POST">
@@ -67,6 +69,8 @@
         </div>
     </div>
     <div class="form-group row">
-        <button type="submit" class="btn btn-warning">Update</button>
+        <div class="col-sm-12">
+            <button type="submit" class="btn btn-warning">Update</button>
+        </div>
     </div>
 </form>

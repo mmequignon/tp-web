@@ -28,12 +28,12 @@
         </div>
     </div>
     <div class="form-group row">
-        <label for="inputDescription" class="col-sm-2">Name</label>
+        <label for="inputDescription" class="col-sm-2">Description</label>
         <div class="col-sm-10">
             <input name="description" type="text" class="form-control" id="inputDescription" placeholder="Enter description">
         </div>
     </div>
-    <div class="form-group">
+    <div class="form-group row">
         <label for="inputDetail" class="col-sm-2">Comment</label>
         <div class="col-sm-10">
             <textarea name="detail" class="form-control" rows="5" id="inputDeltail" placeholder="Insert details about product"></textarea>
