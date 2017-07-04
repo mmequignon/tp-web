@@ -36,6 +36,7 @@ class Update extends CI_Controller {
             "admin" => $admin
         );
         $this->load->view('base/header', $data);
+        $this->load->view('base/errors');
         $this->load->view('users/update', $data);
         $this->load->view('base/footer');
 	}

@@ -38,6 +38,7 @@ class Update extends Admin {
             "admin" => $admin
         );
         $this->load->view('base/header', $data);
+        $this->load->view('base/errors');
         $this->load->view('admin/product/update', $data);
         $this->load->view('base/footer');
 	}

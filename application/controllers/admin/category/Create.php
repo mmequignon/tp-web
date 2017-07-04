@@ -26,6 +26,7 @@ class Create extends Admin {
             "admin" => $admin
         );
         $this->load->view('base/header', $data);
+        $this->load->view('base/errors');
         $this->load->view('admin/product_category/create');
         $this->load->view('base/footer');
 	}

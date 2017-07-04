@@ -1,7 +1,3 @@
-<div class="alert alert-danger" <?php echo (validation_errors()) ? "" : 'style="display:none"'; ?>>
-    <strong>Error !</strong><?php echo validation_errors(); ?>
-</div>
-
 <form action="<?php echo site_url('users/register/save'); ?>" method="POST">
     <div class="form-group row">
         <label for="inputLogin" class="col-sm-2 col-form-label">Login</label>

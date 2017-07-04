@@ -17,6 +17,7 @@ class Register extends CI_Controller {
             "admin" => $admin
         );
         $this->load->view('base/header', $data);
+        $this->load->view('base/errors');
         $this->load->view('users/register');
         $this->load->view('base/footer');
 	}
