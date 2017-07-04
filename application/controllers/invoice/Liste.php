@@ -19,7 +19,7 @@ class Liste extends CI_Controller {
         $user = $this->Users->get_user_by_id($id);
         $orders = $this->Invoice->get_invoices_by_user_id($id);
         $data = array(
-            "page" => "invoices",
+            "page" => "invoice",
             "title" => "Your orders",
             "orders" =>$orders,
             "logged" => $logged,
