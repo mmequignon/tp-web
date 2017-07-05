@@ -1,3 +1,4 @@
+<hr>
 <form action="<?php echo site_url('admin/product/create/save'); ?>" method="POST">
     <div class="form-group row">
         <label for="inputLogin" class="col-sm-2">Name</label>

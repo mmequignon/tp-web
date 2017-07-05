@@ -1,3 +1,4 @@
+<hr>
 <form action="<?php echo site_url('admin/product/update/save'); ?>" method="POST">
     <input name="id" type="hidden" value="<?php echo $id; ?>">
     <div class="form-group row">

@@ -1,3 +1,4 @@
+<hr>
 <form action="<?php echo site_url('users/register/save'); ?>" method="POST">
     <div class="form-group row">
         <label for="inputLogin" class="col-sm-2 col-form-label">Login</label>

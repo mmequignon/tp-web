@@ -1,3 +1,4 @@
+<hr>
 <div class="row">
     <form action="<?php echo site_url('product/liste'); ?>" method="GET">
         <div class="form-group">
@@ -21,7 +22,7 @@
         </div>
     </form>
 </div>
-<br>
+<hr>
 <table class="table table-hover" >
     <thead>
       <tr>
@@ -54,4 +55,5 @@
         <?php endforeach; ?>
     </tbody>
 </table>
+<hr>
 <a href="<?php echo site_url('admin/product/create'); ?>" class="btn btn-primary btn-lg active" role="button" aria-pressed="true" <?php echo ($admin == FALSE) ? 'style="display:none;"' : ''; ?>>Create</a>

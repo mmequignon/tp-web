@@ -34,7 +34,7 @@ class Order extends CI_Controller {
          */
         $invoice_lines = $this->InvoiceLine->get_invoice_lines_by_invoice_id($invoice_id);
         $data = array(
-            "page" => "account",
+            "page" => "invoice",
             "title" => "Invoice No : ".$invoice->id,
             "invoice" => $invoice,
             "invoice_lines" => $invoice_lines,

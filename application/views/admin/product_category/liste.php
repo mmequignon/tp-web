@@ -1,3 +1,4 @@
+<hr>
 <table class="table table-hover" >
     <thead>
       <tr>
@@ -14,4 +15,5 @@
         <?php endforeach; ?>
     </tbody>
 </table>
+<hr>
 <a href="<?php echo site_url('admin/category/create'); ?>" class="btn btn-primary btn-lg active" role="button" aria-pressed="true" <?php echo ($admin == FALSE) ? 'style="display:none;"' : ''; ?>>Create category</a>

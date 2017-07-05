@@ -1,3 +1,4 @@
+<hr>
 <table class="table table-hover" >
     <thead>
       <tr>
@@ -22,6 +23,7 @@
         <?php endforeach; ?>
     </tbody>
 </table>
+<hr>
 <form action="<?php echo site_url('basket/checkout'); ?>" method="POST">
     <div class="form-group row">
         <label for="inputDelivery" class="col-sm-2">Delivery mode : </label>

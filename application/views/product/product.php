@@ -25,14 +25,13 @@
             </div>
             <?php else: ?>
             <div class="form-group row" <?php echo ($logged == FALSE) ? 'style="display:none;"' : ''; ?>>
-                    <label for="product_qty" class="col-sm-2">Quantity</label>
-                    <div class="col-sm-10">
-                        <select class="custom-select" name="product_qty" id="inputProductCategoryId">
-                            <?php for( $i = 0; $i <= $product->stock; $i++) : ?>
-                            <option <?php echo($i == 0 ) ? "selected" : ""; ?> value="<?php echo $i ;?>"><?php echo $i ;?></option>
-                            <?php endfor; ?>
-                        </select>
-                    </div>
+                <label for="product_qty" class="col-sm-2">Quantity</label>
+                <div class="col-sm-10">
+                    <select class="custom-select" name="product_qty" id="inputProductCategoryId">
+                        <?php for( $i = 0; $i <= $product->stock; $i++) : ?>
+                        <option <?php echo($i == 0 ) ? "selected" : ""; ?> value="<?php echo $i ;?>"><?php echo $i ;?></option>
+                        <?php endfor; ?>
+                    </select>
                 </div>
             </div>
             <?php endif; ?>

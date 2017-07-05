@@ -1,3 +1,4 @@
+<hr>
 <form action="<?php echo site_url('users/login/check'); ?>" method="POST">
     <div class="form-group row">
         <label for="inputLogin" class="col-sm-2">Login</label>
@@ -17,6 +18,7 @@
         </div>
     </div>
 </form>
+<hr>
 <div class="row">
     <p class="col-sm-12">Don't have an account yet ? Please <a href="<?php echo site_url('users/register')?>">register</a></p>
 </div>

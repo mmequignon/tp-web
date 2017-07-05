@@ -1,3 +1,4 @@
+<hr>
 <table class="table table-hover" >
     <thead>
       <tr>

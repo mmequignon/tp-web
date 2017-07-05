@@ -1,3 +1,4 @@
+<hr>
 <form action="<?php echo site_url('users/update/save'); ?>" method="POST">
     <input name="id" type="hidden" value="<?php echo $user->id; ?>">
     <div class="form-group row">
@@ -48,6 +49,7 @@
         </div>
     </div>
 </form>
+<hr>
 <form action="<?php echo site_url('users/update/save_password'); ?>" method="POST">
     <input name="id" type="hidden" value="<?php echo $user->id; ?>">
     <div class="form-group row">
